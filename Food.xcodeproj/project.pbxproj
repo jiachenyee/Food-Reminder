@@ -150,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				3296F98628871F26000810ED /* FoodWidgetExtension.entitlements */,
+				3296F989288726FC000810ED /* Shared */,
 				3296F9282886F950000810ED /* Food */,
 				3296F93A2886F951000810ED /* Food Watch App */,
 				3296F97328871E07000810ED /* FoodWidget */,
@@ -176,11 +177,7 @@
 				3296F92B2886F950000810ED /* ContentView.swift */,
 				3296F98728872586000810ED /* LogView.swift */,
 				3296F95828870509000810ED /* NewEntrySection.swift */,
-				3296F95128870243000810ED /* FoodRecordManager.swift */,
-				3296F967288718C2000810ED /* CommunicationManager.swift */,
 				3296F94D2886FAD0000810ED /* FoodLogView.swift */,
-				3296F9532887027E000810ED /* FoodEntry.swift */,
-				3296F94F288700BA000810ED /* DateEntry.swift */,
 				3296F92D2886F951000810ED /* Assets.xcassets */,
 				3296F92F2886F951000810ED /* Preview Content */,
 			);
@@ -234,6 +231,17 @@
 				3296F97828871E08000810ED /* Info.plist */,
 			);
 			path = FoodWidget;
+			sourceTree = "<group>";
+		};
+		3296F989288726FC000810ED /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3296F95128870243000810ED /* FoodRecordManager.swift */,
+				3296F967288718C2000810ED /* CommunicationManager.swift */,
+				3296F9532887027E000810ED /* FoodEntry.swift */,
+				3296F94F288700BA000810ED /* DateEntry.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
