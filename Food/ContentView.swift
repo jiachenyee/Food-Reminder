@@ -8,12 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var foodRecordManager = FoodRecordManager()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            Form {
+                Section(foodRecordManager.lastMealMessage) {
+                    ScrollView(.horizontal) {
+                        FoodLogView(dateEntries: foodRecordManager.dateEntries)
+                    }
+                }
+                
+                NewEntrySection(foodRecordManager: foodRecordManager)
+            }
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+            .navigationTitle("Food Reminder")
         }
     }
 }
