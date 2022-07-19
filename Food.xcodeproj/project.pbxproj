@@ -40,6 +40,7 @@
 		3296F98228871E80000810ED /* DateEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3296F94F288700BA000810ED /* DateEntry.swift */; };
 		3296F98328871E8A000810ED /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3296F967288718C2000810ED /* CommunicationManager.swift */; };
 		3296F98528871E98000810ED /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 3296F98428871E98000810ED /* Algorithms */; };
+		3296F98828872586000810ED /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3296F98728872586000810ED /* LogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		3296F97628871E08000810ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3296F97828871E08000810ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3296F98628871F26000810ED /* FoodWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoodWidgetExtension.entitlements; sourceTree = "<group>"; };
+		3296F98728872586000810ED /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				3296F95E28870FC0000810ED /* Food.entitlements */,
 				3296F9292886F950000810ED /* FoodApp.swift */,
 				3296F92B2886F950000810ED /* ContentView.swift */,
+				3296F98728872586000810ED /* LogView.swift */,
 				3296F95828870509000810ED /* NewEntrySection.swift */,
 				3296F95128870243000810ED /* FoodRecordManager.swift */,
 				3296F967288718C2000810ED /* CommunicationManager.swift */,
@@ -385,6 +388,7 @@
 				3296F950288700BA000810ED /* DateEntry.swift in Sources */,
 				3296F9542887027E000810ED /* FoodEntry.swift in Sources */,
 				3296F968288718C2000810ED /* CommunicationManager.swift in Sources */,
+				3296F98828872586000810ED /* LogView.swift in Sources */,
 				3296F92A2886F950000810ED /* FoodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

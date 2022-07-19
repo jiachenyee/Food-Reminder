@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @StateObject var foodRecordManager = FoodRecordManager()
+    @State var isLogPresented = false
     
     var body: some View {
         NavigationView {
@@ -25,13 +26,16 @@ struct ContentView: View {
             .toolbar {
                 ToolbarItem {
                     Button {
-                        
+                        isLogPresented = true
                     } label: {
-                        Image(systemName: "plus")
+                        Image(systemName: "list.bullet.rectangle.portrait")
                     }
                 }
             }
             .navigationTitle("Food Reminder")
+            .sheet(isPresented: $isLogPresented) {
+                LogView(foodEntries: foodRecordManager.foodEntries)
+            }
         }
     }
 }

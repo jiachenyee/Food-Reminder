@@ -98,7 +98,7 @@ class FoodRecordManager: ObservableObject {
         communicationManager.createWCSession()
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { _, error in
-            print(error?.localizedDescription)
+            
         }
     }
     
